@@ -8,7 +8,9 @@
 </head>
 <body>
       <main>
+        <h1>Conversor de moedas</h1>
       <?php 
+    //Exercicio com cotação fixa, não esta consumindo uma api para a atualização comtinua 
     $cotacao = 5.17;
     $real = $_REQUEST["din"] ?? 0;
     $dolar = $real / $cotacao;
@@ -17,10 +19,10 @@
 
     echo "Seus " . numfmt_format_currency($padrao, $real, "BRL") . 
          " equivalem a " . numfmt_format_currency($padrao, $dolar, "USD"); 
-  ?>
-
+      ?>
+       h1><a href="javascript:history.go(-1)"><button>Voltar</button></a></h1>
       </main>
-      <h1><a href="javascript:history.go(-1)"><button>Voltar</button></a></h1>
+      
   
 </body>
 </html>
