@@ -14,8 +14,7 @@ body {
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
-    margin: 0;
-    max-height: 100vh;
+
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -25,10 +24,6 @@ body {
 
 header, main, section, article {
     max-width: 700px;
-    padding: 2rem;
-    position: absolute;
-    top: 25%;
-
 }
 
 header > h1 {
